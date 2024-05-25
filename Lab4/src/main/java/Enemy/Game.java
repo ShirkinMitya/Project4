@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mortalkombatbversion;
+package Enemy;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -37,9 +37,9 @@ public class Game {
         pr2.setMaximum(enemy.getMaxHealth());
         return enemy;
     }
-    
-    public Human NewHuman(JProgressBar pr1){
-        Human human = new Human (0,80,16,1);
+
+    public Human NewHuman(JProgressBar pr1) {
+        Human human = new Human(0, 80, 16, 1);
         action.HP(human, pr1);
         pr1.setMaximum(human.getMaxHealth());
         return human;
@@ -51,18 +51,18 @@ public class Game {
         WriteToTable(table);
         WriteToExcel();
     }
-    
-    public void WriteToExcel() throws IOException{
+
+    public void WriteToExcel() throws IOException {
         XSSFWorkbook book = new XSSFWorkbook();
         XSSFSheet sheet = book.createSheet("Результаты ТОП 10");
         XSSFRow r = sheet.createRow(0);
         r.createCell(0).setCellValue("№");
         r.createCell(1).setCellValue("Имя");
         r.createCell(2).setCellValue("Количество баллов");
-        for (int i=0; i<results.size();i++){
-            if (i<10){
-                XSSFRow r2 = sheet.createRow(i+1);
-                r2.createCell(0).setCellValue(i+1);
+        for (int i = 0; i < results.size(); i++) {
+            if (i < 10) {
+                XSSFRow r2 = sheet.createRow(i + 1);
+                r2.createCell(0).setCellValue(i + 1);
                 r2.createCell(1).setCellValue(results.get(i).getName());
                 r2.createCell(2).setCellValue(results.get(i).getPoints());
             }
@@ -71,23 +71,23 @@ public class Game {
         book.write(new FileOutputStream(f));
         book.close();
     }
-    
-    public ArrayList<Result> getResults(){
+
+    public ArrayList<Result> getResults() {
         return this.results;
     }
 
-    public void ReadFromExcel() throws IOException{
+    public void ReadFromExcel() throws IOException {
         XSSFWorkbook book = new XSSFWorkbook("C:\\Users\\Мария\\Desktop\\Results.xlsx");
         XSSFSheet sh = book.getSheetAt(0);
-        for (int i=1; i<=sh.getLastRowNum();i++) {
-            results.add(new Result(sh.getRow(i).getCell(1).getStringCellValue(),(int)sh.getRow(i).getCell(2).getNumericCellValue()));
+        for (int i = 1; i <= sh.getLastRowNum(); i++) {
+            results.add(new Result(sh.getRow(i).getCell(1).getStringCellValue(), (int) sh.getRow(i).getCell(2).getNumericCellValue()));
         }
     }
-    
-    public void WriteToTable(JTable table){
-        DefaultTableModel model = (DefaultTableModel)table.getModel();
-        for (int i=0; i<results.size();i++){
-            if (i<10){
+
+    public void WriteToTable(JTable table) {
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+        for (int i = 0; i < results.size(); i++) {
+            if (i < 10) {
                 model.setValueAt(results.get(i).getName(), i, 0);
                 model.setValueAt(results.get(i).getPoints(), i, 1);
             }

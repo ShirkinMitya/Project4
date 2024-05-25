@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mortalkombatbversion;
+package Enemy;
 
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
@@ -281,8 +281,8 @@ public class CharacterAction {
                 dialog.setBounds(300, 200, 400, 300);
                 break;
         }
-        
-        if(dialog.isVisible()==false){
+
+        if (dialog.isVisible() == false) {
             dialog1.dispose();
         }
     }
