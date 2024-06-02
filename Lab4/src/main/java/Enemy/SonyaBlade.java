@@ -1,21 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Enemy;
 
-/**
- *
- * @author Мария
- */
-public class SonyaBlade extends Player {
+import Character.Enemy;
 
-    public SonyaBlade(int level, int health, int damage, int attack) {
-        super(level, health, damage, attack);
+public class SonyaBlade extends Enemy {
+
+    public SonyaBlade(int level, int health, int damage) {
+        super("SonyaBlade", level, health, damage, attack, " ", new int[]{25, 25, 50, 0});
     }
 
-    @Override
-    public String getName() {
-        return "Sonya Blade";
-    }
 }

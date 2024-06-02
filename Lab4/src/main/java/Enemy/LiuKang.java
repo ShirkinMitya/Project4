@@ -1,21 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Enemy;
 
-/**
- *
- * @author Мария
- */
-public class LiuKang extends Player {
+import Character.Enemy;
 
-    public LiuKang(int level, int health, int damage, int attack) {
-        super(level, health, damage, attack);
+public class LiuKang extends Enemy {
+
+    public LiuKang(int level, int health, int damage) {
+        super("LuiKang", level, health, damage, "", new int[]{13, 13, 10, 64});
     }
 
-    @Override
-    public String getName() {
-        return "Liu Kang";
-    }
 }

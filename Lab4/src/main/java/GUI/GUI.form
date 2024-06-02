@@ -2,25 +2,25 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Container class="javax.swing.JFrame" name="jFrame1">
+    <Container class="javax.swing.JFrame" name="FrameFight">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <Component id="PaneFight" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
+              <Component id="PaneFight" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel2">
+        <Container class="javax.swing.JPanel" name="PaneFight">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -32,14 +32,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                      <Component id="LabelEnemyHealth" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel11" min="-2" pref="205" max="-2" attributes="0"/>
-                                  <Component id="jLabel14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelFight" min="-2" pref="205" max="-2" attributes="0"/>
+                                  <Component id="LabelExperience" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
@@ -48,45 +48,45 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jProgressBar2" min="-2" pref="162" max="-2" attributes="0"/>
+                                              <Component id="ProgressBarEnemyHealthLevel" min="-2" pref="162" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" attributes="0">
                                                       <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="LabelPoints" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="LabelPointsNumber" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="LabelExperienceNumber" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel7" min="-2" pref="62" max="-2" attributes="0"/>
+                                              <Component id="LabelEnemyDamage" min="-2" pref="62" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jLabel10" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="LabelEnemyDamageNumber" min="-2" pref="40" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jLabel5" min="-2" pref="162" max="-2" attributes="0"/>
+                                              <Component id="LabelEnemyName" min="-2" pref="162" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel4" min="-2" pref="189" max="-2" attributes="0"/>
+                                      <Component id="LabelEnemyImage" min="-2" pref="189" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                              <Component id="jLabel26" min="-2" pref="164" max="-2" attributes="0"/>
+                                              <Component id="LabelWhoseMotion" min="-2" pref="164" max="-2" attributes="0"/>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="jLabel27" min="-2" pref="237" max="-2" attributes="0"/>
-                                                  <Component id="jLabel29" min="-2" pref="227" max="-2" attributes="0"/>
+                                                  <Component id="LabelLastAction" min="-2" pref="237" max="-2" attributes="0"/>
+                                                  <Component id="LabelStunnInfo" min="-2" pref="227" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace pref="46" max="32767" attributes="0"/>
                                           </Group>
@@ -94,42 +94,42 @@
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jButton10" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="ButtonItems" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="LabelPlayerLevel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jProgressBar1" min="-2" pref="177" max="-2" attributes="0"/>
+                                              <Component id="ProgressBarPlayerHealthLevel" min="-2" pref="177" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                              <Component id="LabelPlayerHealth" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel8" min="-2" pref="62" max="-2" attributes="0"/>
+                                              <Component id="LabelPlayerDamage" min="-2" pref="62" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jLabel9" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="LabelPlayerDamageNumber" min="-2" pref="40" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel2" min="-2" pref="245" max="-2" attributes="0"/>
+                                      <Component id="LabelPlayerImage" min="-2" pref="245" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel28" min="-2" pref="118" max="-2" attributes="0"/>
+                                      <Component id="LabelPlayerName" min="-2" pref="118" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jButton3" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="ButtonAttack" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                      <Component id="jButton4" min="-2" pref="109" max="-2" attributes="0"/>
+                                      <Component id="ButtonProtection" min="-2" pref="109" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -139,7 +139,7 @@
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                          <Component id="LabelEnemyLevel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="854" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -149,76 +149,74 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="21" max="32767" attributes="0"/>
-                      <Component id="jLabel11" min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="LabelFight" min="-2" pref="64" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jProgressBar1" pref="32" max="32767" attributes="0"/>
-                                  <Component id="jProgressBar2" max="32767" attributes="0"/>
+                                  <Component id="ProgressBarPlayerHealthLevel" pref="32" max="32767" attributes="0"/>
+                                  <Component id="ProgressBarEnemyHealthLevel" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                      <Component id="LabelPlayerHealth" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelEnemyHealth" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelExperience" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelPoints" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="8" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelExperienceNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelPointsNumber" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="LabelPlayerDamage" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="LabelEnemyDamage" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="LabelEnemyDamageNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="LabelPlayerDamageNumber" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jLabel4" min="-2" pref="275" max="-2" attributes="0"/>
+                              <Component id="LabelEnemyImage" min="-2" pref="275" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="LabelEnemyName" min="-2" pref="29" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="LabelPlayerLevel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" min="-2" pref="227" max="-2" attributes="0"/>
+                                      <Component id="LabelPlayerImage" min="-2" pref="227" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      <Component id="jLabel27" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="LabelLastAction" min="-2" pref="35" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jLabel26" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Component id="LabelWhoseMotion" min="-2" pref="43" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel29" min="-2" pref="38" max="-2" attributes="0"/>
+                                      <Component id="LabelStunnInfo" min="-2" pref="38" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel28" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="LabelPlayerName" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace pref="25" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jButton10" pref="44" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jButton3" alignment="0" pref="44" max="32767" attributes="0"/>
-                                      <Component id="jButton4" alignment="0" pref="44" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="ButtonItems" pref="44" max="32767" attributes="0"/>
+                                  <Component id="ButtonAttack" alignment="0" pref="44" max="32767" attributes="0"/>
+                                  <Component id="ButtonProtection" alignment="0" pref="44" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           </Group>
@@ -227,7 +225,7 @@
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
-                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                          <Component id="LabelEnemyLevel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="380" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -235,9 +233,9 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel2">
+            <Component class="javax.swing.JLabel" name="LabelPlayerImage">
             </Component>
-            <Component class="javax.swing.JButton" name="jButton3">
+            <Component class="javax.swing.JButton" name="ButtonAttack">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="ff" type="rgb"/>
@@ -248,10 +246,10 @@
                 <Property name="text" type="java.lang.String" value="&#x410;&#x442;&#x430;&#x43a;&#x43e;&#x432;&#x430;&#x442;&#x44c;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonAttackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton4">
+            <Component class="javax.swing.JButton" name="ButtonProtection">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="cc" red="ff" type="rgb"/>
@@ -262,10 +260,10 @@
                 <Property name="text" type="java.lang.String" value="&#x417;&#x430;&#x449;&#x438;&#x442;&#x438;&#x442;&#x44c;&#x441;&#x44f;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonProtectionActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JProgressBar" name="jProgressBar1">
+            <Component class="javax.swing.JProgressBar" name="ProgressBarPlayerHealthLevel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -277,9 +275,9 @@
                 <Property name="minimum" type="int" value="-1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="LabelEnemyImage">
             </Component>
-            <Component class="javax.swing.JProgressBar" name="jProgressBar2">
+            <Component class="javax.swing.JProgressBar" name="ProgressBarEnemyHealthLevel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -290,7 +288,7 @@
                 <Property name="minimum" type="int" value="-1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
+            <Component class="javax.swing.JLabel" name="LabelEnemyName">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -300,7 +298,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel7">
+            <Component class="javax.swing.JLabel" name="LabelEnemyDamage">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -311,7 +309,7 @@
                 <Property name="text" type="java.lang.String" value="Damage"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel8">
+            <Component class="javax.swing.JLabel" name="LabelPlayerDamage">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -322,7 +320,7 @@
                 <Property name="text" type="java.lang.String" value="Damage"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel9">
+            <Component class="javax.swing.JLabel" name="LabelPlayerDamageNumber">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -336,7 +334,7 @@
                 <Property name="text" type="java.lang.String" value="16"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
+            <Component class="javax.swing.JLabel" name="LabelEnemyDamageNumber">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -350,7 +348,7 @@
                 <Property name="text" type="java.lang.String" value="16"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel6">
+            <Component class="javax.swing.JLabel" name="LabelPlayerLevel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -361,7 +359,7 @@
                 <Property name="text" type="java.lang.String" value="0 &#x443;&#x440;&#x43e;&#x432;&#x435;&#x43d;&#x44c;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel11">
+            <Component class="javax.swing.JLabel" name="LabelFight">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -377,7 +375,7 @@
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel12">
+            <Component class="javax.swing.JLabel" name="LabelPlayerHealth">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -391,7 +389,7 @@
                 <Property name="text" type="java.lang.String" value="80/80"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel13">
+            <Component class="javax.swing.JLabel" name="LabelEnemyHealth">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -405,7 +403,7 @@
                 <Property name="text" type="java.lang.String" value="80/80"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel14">
+            <Component class="javax.swing.JLabel" name="LabelExperience">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -419,7 +417,7 @@
                 <Property name="text" type="java.lang.String" value="experience"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel15">
+            <Component class="javax.swing.JLabel" name="LabelPoints">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -433,7 +431,7 @@
                 <Property name="text" type="java.lang.String" value="points"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel16">
+            <Component class="javax.swing.JLabel" name="LabelExperienceNumber">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -447,7 +445,7 @@
                 <Property name="text" type="java.lang.String" value="0/40"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel17">
+            <Component class="javax.swing.JLabel" name="LabelPointsNumber">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -461,7 +459,7 @@
                 <Property name="text" type="java.lang.String" value="00"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel19">
+            <Component class="javax.swing.JLabel" name="LabelEnemyLevel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -472,7 +470,7 @@
                 <Property name="text" type="java.lang.String" value="1 &#x443;&#x440;&#x43e;&#x432;&#x435;&#x43d;&#x44c;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel26">
+            <Component class="javax.swing.JLabel" name="LabelWhoseMotion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="16" style="0"/>
@@ -480,7 +478,7 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel27">
+            <Component class="javax.swing.JLabel" name="LabelLastAction">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="12" style="1"/>
@@ -491,7 +489,7 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel28">
+            <Component class="javax.swing.JLabel" name="LabelPlayerName">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="14" style="2"/>
@@ -500,7 +498,7 @@
                 <Property name="text" type="java.lang.String" value="Kitana "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel29">
+            <Component class="javax.swing.JLabel" name="LabelStunnInfo">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="16" style="0"/>
@@ -508,7 +506,7 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton10">
+            <Component class="javax.swing.JButton" name="ButtonItems">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="6a" green="b7" red="ae" type="rgb"/>
@@ -519,21 +517,21 @@
                 <Property name="text" type="java.lang.String" value="&#x41f;&#x440;&#x435;&#x434;&#x43c;&#x435;&#x442;&#x44b;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonItemsActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDialog" name="jDialog1">
+    <Container class="javax.swing.JDialog" name="DialogRoundResult">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <Component id="PanelRoundResult" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -542,14 +540,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <Component id="PanelRoundResult" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel3">
+        <Container class="javax.swing.JPanel" name="PanelRoundResult">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d9" green="e2" red="b3" type="rgb"/>
@@ -563,11 +561,11 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
-                              <Component id="jButton5" min="-2" pref="241" max="-2" attributes="0"/>
+                              <Component id="ButtonNextInRoundResult" min="-2" pref="241" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-                              <Component id="jLabel18" min="-2" pref="467" max="-2" attributes="0"/>
+                              <Component id="LabelRoundResult" min="-2" pref="467" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="106" max="32767" attributes="0"/>
@@ -578,16 +576,16 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                      <Component id="jLabel18" min="-2" pref="143" max="-2" attributes="0"/>
+                      <Component id="LabelRoundResult" min="-2" pref="143" max="-2" attributes="0"/>
                       <EmptySpace pref="108" max="32767" attributes="0"/>
-                      <Component id="jButton5" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="ButtonNextInRoundResult" min="-2" pref="139" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel18">
+            <Component class="javax.swing.JLabel" name="LabelRoundResult">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -603,7 +601,7 @@
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton5">
+            <Component class="javax.swing.JButton" name="ButtonNextInRoundResult">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="8e" green="da" red="72" type="rgb"/>
@@ -614,21 +612,21 @@
                 <Property name="text" type="java.lang.String" value="&#x414;&#x430;&#x43b;&#x44c;&#x448;&#x435;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonNextInRoundResultActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDialog" name="jDialog2">
+    <Container class="javax.swing.JDialog" name="DialogWinWithRecord">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel4" max="32767" attributes="0"/>
+                  <Component id="PaneWinWithRecord" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -637,14 +635,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel4" max="32767" attributes="0"/>
+                  <Component id="PaneWinWithRecord" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel4">
+        <Container class="javax.swing.JPanel" name="PaneWinWithRecord">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="ff" type="rgb"/>
@@ -656,24 +654,24 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                      <Component id="ButtonFinishWithRecord" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
-                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              <Component id="LabelWriteNameYourCharacterSecondRow" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                              <Component id="jLabel20" min="-2" pref="363" max="-2" attributes="0"/>
+                              <Component id="LabelWinWithRecord" min="-2" pref="363" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField1" min="-2" pref="312" max="-2" attributes="0"/>
-                                  <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TextFieldNameForRecord" min="-2" pref="312" max="-2" attributes="0"/>
+                                  <Component id="LabelWriteNameYourCharacter" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -685,22 +683,22 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                      <Component id="jLabel20" min="-2" pref="81" max="-2" attributes="0"/>
+                      <Component id="LabelWinWithRecord" min="-2" pref="81" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel21" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="LabelWriteNameYourCharacter" min="-2" pref="38" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                      <Component id="LabelWriteNameYourCharacterSecondRow" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="33" max="32767" attributes="0"/>
-                      <Component id="jTextField1" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="TextFieldNameForRecord" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton6" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="ButtonFinishWithRecord" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel20">
+            <Component class="javax.swing.JLabel" name="LabelWinWithRecord">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="24" style="3"/>
@@ -712,7 +710,7 @@
                 <Property name="text" type="java.lang.String" value="&#x41f;&#x43e;&#x431;&#x435;&#x434;&#x430; &#x43d;&#x430; &#x432;&#x430;&#x448;&#x435;&#x439; &#x441;&#x442;&#x43e;&#x440;&#x43e;&#x43d;&#x435;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="TextFieldNameForRecord">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="18" style="1"/>
@@ -720,10 +718,10 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldNameForRecordActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel21">
+            <Component class="javax.swing.JLabel" name="LabelWriteNameYourCharacter">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="14" style="0"/>
@@ -734,7 +732,7 @@
                 <Property name="text" type="java.lang.String" value="&#x412;&#x432;&#x435;&#x434;&#x438;&#x442;&#x435; &#x438;&#x43c;&#x44f; &#x441;&#x432;&#x43e;&#x435;&#x433;&#x43e; &#x43f;&#x435;&#x440;&#x441;&#x43e;&#x43d;&#x430;&#x436;&#x430; &#x434;&#x43b;&#x44f; &#x434;&#x43e;&#x431;&#x430;&#x432;&#x43b;&#x435;&#x43d;&#x438;&#x44f;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel22">
+            <Component class="javax.swing.JLabel" name="LabelWriteNameYourCharacterSecondRow">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="14" style="0"/>
@@ -745,7 +743,7 @@
                 <Property name="text" type="java.lang.String" value="&#x440;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442;&#x430; &#x432; &#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x443; &#x440;&#x435;&#x43a;&#x43e;&#x440;&#x434;&#x43e;&#x432;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton6">
+            <Component class="javax.swing.JButton" name="ButtonFinishWithRecord">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="99" red="99" type="rgb"/>
@@ -759,29 +757,29 @@
                 <Property name="text" type="java.lang.String" value="&#x417;&#x430;&#x43a;&#x43e;&#x43d;&#x447;&#x438;&#x442;&#x44c; &#x438;&#x433;&#x440;&#x443;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonFinishWithRecordActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDialog" name="jDialog3">
+    <Container class="javax.swing.JDialog" name="DialogRecordTable">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel5" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelRecordTable" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel5" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelRecordTable" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel5">
+        <Container class="javax.swing.JPanel" name="PanelRecordTable">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -793,15 +791,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jButton7" alignment="1" min="-2" pref="143" max="-2" attributes="0"/>
+                          <Component id="ButtonCloseRecordTable" alignment="1" min="-2" pref="143" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
-                                  <Component id="jLabel23" min="-2" pref="241" max="-2" attributes="0"/>
+                                  <Component id="LabelRecordTable" min="-2" pref="241" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane1" min="-2" pref="527" max="-2" attributes="0"/>
+                                  <Component id="ScrollPaneRecordTable" min="-2" pref="527" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -813,18 +811,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="jLabel23" min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="LabelRecordTable" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="262" max="-2" attributes="0"/>
+                      <Component id="ScrollPaneRecordTable" min="-2" pref="262" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton7" pref="38" max="32767" attributes="0"/>
+                      <Component id="ButtonCloseRecordTable" pref="38" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel23">
+            <Component class="javax.swing.JLabel" name="LabelRecordTable">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="24" style="1"/>
@@ -836,14 +834,14 @@
                 <Property name="text" type="java.lang.String" value="&#x422;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x430; &#x440;&#x435;&#x43a;&#x43e;&#x440;&#x434;&#x43e;&#x432;"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+            <Container class="javax.swing.JScrollPane" name="ScrollPaneRecordTable">
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
               </AuxValues>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTable" name="jTable1">
+                <Component class="javax.swing.JTable" name="TableRecord">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="2" rowCount="10">
@@ -855,7 +853,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="jButton7">
+            <Component class="javax.swing.JButton" name="ButtonCloseRecordTable">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="ff" red="ff" type="rgb"/>
@@ -869,29 +867,29 @@
                 <Property name="text" type="java.lang.String" value="&#x417;&#x430;&#x43a;&#x440;&#x44b;&#x442;&#x44c;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonCloseRecordTableActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDialog" name="jDialog4">
+    <Container class="javax.swing.JDialog" name="DialogWinNoRecord">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel6" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelWinNoRecord" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel6" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelWinNoRecord" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel6">
+        <Container class="javax.swing.JPanel" name="PanelWinNoRecord">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="ff" type="rgb"/>
@@ -905,15 +903,15 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                              <Component id="jLabel24" min="-2" pref="354" max="-2" attributes="0"/>
+                              <Component id="LabelWinNoRecord" min="-2" pref="354" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                              <Component id="jLabel25" min="-2" pref="333" max="-2" attributes="0"/>
+                              <Component id="LabelWinNotRecordSecondRow" min="-2" pref="333" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
-                              <Component id="jButton8" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="ButtonFinishNoRecord" min="-2" pref="158" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="68" max="32767" attributes="0"/>
@@ -924,18 +922,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                      <Component id="jLabel24" min="-2" pref="73" max="-2" attributes="0"/>
+                      <Component id="LabelWinNoRecord" min="-2" pref="73" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Component id="jLabel25" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="LabelWinNotRecordSecondRow" min="-2" pref="29" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                      <Component id="jButton8" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="ButtonFinishNoRecord" min="-2" pref="51" max="-2" attributes="0"/>
                       <EmptySpace pref="56" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel24">
+            <Component class="javax.swing.JLabel" name="LabelWinNoRecord">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="24" style="3"/>
@@ -947,7 +945,7 @@
                 <Property name="text" type="java.lang.String" value="&#x41f;&#x43e;&#x431;&#x435;&#x434;&#x430; &#x43d;&#x430; &#x432;&#x430;&#x448;&#x435;&#x439; &#x441;&#x442;&#x43e;&#x440;&#x43e;&#x43d;&#x435;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel25">
+            <Component class="javax.swing.JLabel" name="LabelWinNotRecordSecondRow">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="14" style="0"/>
@@ -958,7 +956,7 @@
                 <Property name="text" type="java.lang.String" value="&#x41a; &#x441;&#x43e;&#x436;&#x430;&#x43b;&#x435;&#x43d;&#x438;&#x44e;, &#x412;&#x430;&#x448; &#x440;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442; &#x43d;&#x435; &#x43f;&#x43e;&#x43f;&#x430;&#x43b; &#x432; &#x442;&#x43e;&#x43f; 10"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton8">
+            <Component class="javax.swing.JButton" name="ButtonFinishNoRecord">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="99" red="99" type="rgb"/>
@@ -972,29 +970,29 @@
                 <Property name="text" type="java.lang.String" value="&#x417;&#x430;&#x43a;&#x43e;&#x43d;&#x447;&#x438;&#x442;&#x44c; &#x438;&#x433;&#x440;&#x443;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonFinishNoRecordActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDialog" name="jDialog5">
+    <Container class="javax.swing.JDialog" name="DialogItemsBag">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelItemsBag" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelItemsBag" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel7">
+        <Container class="javax.swing.JPanel" name="PanelItemsBag">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="87" green="b6" red="be" type="rgb"/>
@@ -1009,15 +1007,15 @@
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel30" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                  <Component id="RadioButtonBigPotion" min="-2" max="-2" attributes="0"/>
+                                  <Component id="RadioButtonCrossOfRebirth" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="RadioButtonSmallPotion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LabelBagItems" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
-                              <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                              <Component id="ButtonUseSelectedItem" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="105" max="32767" attributes="0"/>
@@ -1028,22 +1026,22 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jLabel30" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="LabelBagItems" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="RadioButtonSmallPotion" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="RadioButtonBigPotion" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="RadioButtonCrossOfRebirth" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="jButton9" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="ButtonUseSelectedItem" min="-2" pref="38" max="-2" attributes="0"/>
                       <EmptySpace pref="54" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel30">
+            <Component class="javax.swing.JLabel" name="LabelBagItems">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="16" style="0"/>
@@ -1055,7 +1053,7 @@
                 <Property name="text" type="java.lang.String" value="&#x41c;&#x435;&#x448;&#x43e;&#x43a; &#x43f;&#x440;&#x435;&#x434;&#x43c;&#x435;&#x442;&#x43e;&#x432;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+            <Component class="javax.swing.JRadioButton" name="RadioButtonSmallPotion">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="87" green="b6" red="be" type="rgb"/>
@@ -1066,10 +1064,10 @@
                 <Property name="text" type="java.lang.String" value="&#x41c;&#x430;&#x43b;&#x43e;&#x435; &#x437;&#x435;&#x43b;&#x44c;&#x435; &#x43b;&#x435;&#x447;&#x435;&#x43d;&#x438;&#x435;, 0 &#x448;&#x442;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonSmallPotionActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+            <Component class="javax.swing.JRadioButton" name="RadioButtonBigPotion">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="87" green="b6" red="be" type="rgb"/>
@@ -1080,10 +1078,10 @@
                 <Property name="text" type="java.lang.String" value="&#x411;&#x43e;&#x43b;&#x44c;&#x448;&#x43e;&#x435; &#x437;&#x435;&#x43b;&#x44c;&#x435; &#x43b;&#x435;&#x447;&#x435;&#x43d;&#x438;&#x435;, 0 &#x448;&#x442;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonBigPotionActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+            <Component class="javax.swing.JRadioButton" name="RadioButtonCrossOfRebirth">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="87" green="b6" red="be" type="rgb"/>
@@ -1093,8 +1091,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#x41a;&#x440;&#x435;&#x441;&#x442; &#x432;&#x43e;&#x437;&#x440;&#x43e;&#x436;&#x434;&#x435;&#x43d;&#x438;&#x44f;, 0 &#x448;&#x442;"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonCrossOfRebirthActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton9">
+            <Component class="javax.swing.JButton" name="ButtonUseSelectedItem">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="e" green="ed" red="ef" type="rgb"/>
@@ -1105,31 +1106,31 @@
                 <Property name="text" type="java.lang.String" value="&#x418;&#x441;&#x43f;&#x43e;&#x43b;&#x44c;&#x437;&#x43e;&#x432;&#x430;&#x442;&#x44c;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonUseSelectedItemActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    <Component class="javax.swing.ButtonGroup" name="ButtonGroup">
     </Component>
-    <Container class="javax.swing.JDialog" name="jDialog6">
+    <Container class="javax.swing.JDialog" name="DialogCantUseItem">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelCantUseItem" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
+              <Component id="PanelCantUseItem" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel8">
+        <Container class="javax.swing.JPanel" name="PanelCantUseItem">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="78" green="78" red="f3" type="rgb"/>
@@ -1143,18 +1144,18 @@
                       <EmptySpace pref="82" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                              <Component id="LabelCantUseItem" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel32" min="-2" pref="126" max="-2" attributes="0"/>
+                              <Component id="LabelCantUseItemSecondRow" min="-2" pref="126" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
-                      <Component id="jButton11" min="-2" pref="101" max="-2" attributes="0"/>
+                      <Component id="ButtonOKinWindowCantUseItem" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -1163,18 +1164,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                      <Component id="jLabel31" min="-2" pref="58" max="-2" attributes="0"/>
+                      <Component id="LabelCantUseItem" min="-2" pref="58" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
+                      <Component id="LabelCantUseItemSecondRow" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="62" max="32767" attributes="0"/>
-                      <Component id="jButton11" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="ButtonOKinWindowCantUseItem" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel31">
+            <Component class="javax.swing.JLabel" name="LabelCantUseItem">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="18" style="1"/>
@@ -1186,7 +1187,7 @@
                 <Property name="text" type="java.lang.String" value="&#x412;&#x44b; &#x43d;&#x435; &#x43c;&#x43e;&#x436;&#x435;&#x442;&#x435; &#x438;&#x441;&#x43f;&#x43e;&#x43b;&#x44c;&#x437;&#x43e;&#x432;&#x430;&#x442;&#x44c; "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel32">
+            <Component class="javax.swing.JLabel" name="LabelCantUseItemSecondRow">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="18" style="1"/>
@@ -1198,7 +1199,7 @@
                 <Property name="text" type="java.lang.String" value="&#x44d;&#x442;&#x43e;&#x442; &#x43f;&#x440;&#x435;&#x434;&#x43c;&#x435;&#x442;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton11">
+            <Component class="javax.swing.JButton" name="ButtonOKinWindowCantUseItem">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -1212,7 +1213,7 @@
                 <Property name="text" type="java.lang.String" value="&#x41e;&#x41a;"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonOKinWindowCantUseItemActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1244,7 +1245,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" max="32767" attributes="0"/>
+              <Component id="PanelFirstMenu" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -1253,14 +1254,14 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" max="32767" attributes="0"/>
+              <Component id="PanelFirstMenu" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="PanelFirstMenu">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1272,20 +1273,20 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="43" max="32767" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="214" max="-2" attributes="0"/>
+                  <Component id="ButtonShowResultTable" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="57" max="32767" attributes="0"/>
+                  <Component id="ButtonStartNewGame" min="-2" pref="214" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="174" max="-2" attributes="0"/>
+                          <Component id="LabelGameName" min="-2" pref="174" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LabelForMainPicture" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -1296,13 +1297,13 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="LabelGameName" min="-2" pref="44" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelForMainPicture" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="40" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton2" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
-                      <Component id="jButton1" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="ButtonShowResultTable" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="ButtonStartNewGame" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
@@ -1310,7 +1311,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="LabelGameName">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Comic Sans MS" size="24" style="2"/>
@@ -1322,7 +1323,7 @@
             <Property name="text" type="java.lang.String" value="Mortal Kombat"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="ButtonStartNewGame">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Comic Sans MS" size="12" style="0"/>
@@ -1330,22 +1331,22 @@
             <Property name="text" type="java.lang.String" value="&#x41d;&#x430;&#x447;&#x430;&#x442;&#x44c; &#x43d;&#x43e;&#x432;&#x443;&#x44e; &#x438;&#x433;&#x440;&#x443;"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonStartNewGameActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="ButtonShowResultTable">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Comic Sans MS" size="12" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&#x41f;&#x43e;&#x441;&#x43c;&#x43e;&#x442;&#x440;&#x435;&#x442;&#x44c; &#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x443; &#xa;&#x440;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442;&#x43e;&#x432;"/>
+            <Property name="text" type="java.lang.String" value="&#x41f;&#x43e;&#x441;&#x43c;&#x43e;&#x442;&#x440;&#x435;&#x442;&#x44c; &#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x443;  &#x440;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442;&#x43e;&#x432;"/>
             <Property name="horizontalAlignment" type="int" value="11"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonShowResultTableActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="LabelForMainPicture">
         </Component>
       </SubComponents>
     </Container>

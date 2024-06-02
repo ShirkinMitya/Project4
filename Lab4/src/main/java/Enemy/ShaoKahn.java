@@ -1,21 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Enemy;
 
-/**
- *
- * @author Мария
- */
-public class ShaoKahn extends Player {
+import Character.Enemy;
 
-    public ShaoKahn(int level, int health, int damage, int attack) {
-        super(level, health, damage, attack);
+public class ShaoKahn extends Enemy {
+    
+    public ShaoKahn(int level, int health, int damage) {
+        super("ShaoKahn", level, health, damage, "", new int[]{10, 45, 0, 45});
+        setItemsProbabilities(new int[]{38, 23, 8,});
+        setProbabilityToBrakeBlock(0.15);
+        
     }
-
-    @Override
-    public String getName() {
-        return "Shao Kahn";
-    }
+    
 }
