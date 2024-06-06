@@ -4,15 +4,13 @@ public class Player extends Character {
 
     private int points;
     private int experience;
-    private int win;
-    private int nextexperience;
+    private int nextExperience;
 
     public Player(int level, int health, int damage) {
-        super("You", level, health, damage, ""); 
+        super("You", level, health, damage, "");
         this.points = 0;
         this.experience = 0;
-        this.nextexperience = 40;
-        this.win = 0;
+        this.nextExperience = 40;
     }
 
     public int getPoints() {
@@ -24,27 +22,19 @@ public class Player extends Character {
     }
 
     public int getNextExperience() {
-        return this.nextexperience;
+        return this.nextExperience;
     }
 
-    public int getWin() {
-        return this.win;
+    public void addPoints(int points) {
+        this.points += points;
     }
 
-    public void addPoints(int p) {
-        this.points += p;
+    public void addExperience(int experience) {
+        this.experience += experience;
     }
 
-    public void addExperience(int e) {
-        this.experience += e;
-    }
-
-    public void setNextExperience(int e) {
-        this.nextexperience = e;
-    }
-
-    public void addWin() {
-        this.win++;
+    public void setNextExperience(int nextExperience) {
+        this.nextExperience = nextExperience;
     }
 
 }

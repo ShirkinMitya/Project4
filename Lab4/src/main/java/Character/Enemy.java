@@ -8,13 +8,17 @@ import java.util.Random;
 
 public class Enemy extends Character {
 
-    private Queue<FightActionType> enemyActions = new LinkedList<>();
     private int[] behaviorsProbabilities;
+    private double experienceMultiolier = 1;
     private int[] itemsProbabilities = new int[]{25, 15, 5};
-    private final FightActionType kindFight[][] = {{FightActionType.ATTACK, FightActionType.DEFEND},
-    {FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.DEFEND},
-    {FightActionType.DEFEND, FightActionType.ATTACK, FightActionType.DEFEND},
-    {FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.ATTACK}};
+    private Queue<FightActionType> enemyActions = new LinkedList<>();
+    private final FightActionType kindFight[][] = 
+            {{FightActionType.ATTACK, FightActionType.DEFEND},
+            {FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.DEFEND},
+            {FightActionType.DEFEND, FightActionType.ATTACK, FightActionType.DEFEND},
+            {FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.ATTACK},
+            {FightActionType.DEBUFF},
+            {FightActionType.HILL}};
 
     public Enemy(String name, int level, int health, int damage, String imagePath, int[] behaviorsProbabilities) {
         super(name, level, health, damage, imagePath);
@@ -45,7 +49,7 @@ public class Enemy extends Character {
         for (int i = 1; i < itemsProbabilities.length; i++) {
             int randomNumber = random.nextInt(100);
             if (randomNumber < itemsProbabilities[i]) {
-                items[i].setCount(1);
+                items[i].addCount(1);
                 break;
             }
         }
@@ -53,6 +57,14 @@ public class Enemy extends Character {
 
     public void setItemsProbabilities(int[] itemsProbabilities) {
         this.itemsProbabilities = itemsProbabilities;
+    }
+
+    public void setExperienceMultiolier(double experienceMultiolier) {
+        this.experienceMultiolier = experienceMultiolier;
+    }
+
+    public double getExperienceMultiolier() {
+        return experienceMultiolier;
     }
 
 }

@@ -13,7 +13,7 @@ public class Character {
     private double probabilityToBrakeBlock;
     private String imagePath;
     private FightActionType action;
-    private Weaken weaken = null;
+    private Debuff weaken = null;
 
     public Character(String name, int level, int health, int damage, String imagePath) {
         this.name = name;
@@ -92,7 +92,7 @@ public class Character {
     public FightActionType getAction() {
         return action;
     }
-    
+
     public boolean isStun() {
         return stun;
     }
@@ -117,7 +117,7 @@ public class Character {
         this.action = action;
     }
 
-    public void setWeaken(Weaken weaken) {
+    public void setWeaken(Debuff weaken) {
         this.weaken = weaken;
     }
 

@@ -5,17 +5,17 @@ public class Items {
     private String name;
     private int count;
 
-    public Items(String n, int c) {
-        this.name = n;
-        this.count = c;
+    public Items(String name, int count) {
+        this.name = name;
+        this.count = count;
     }
 
-    public void setName(String s) {
-        this.name = s;
+    public void addCount(int count) {
+        this.count += count;
     }
 
-    public void setCount(int c) {
-        this.count += c;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {

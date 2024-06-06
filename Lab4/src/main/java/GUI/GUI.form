@@ -44,58 +44,65 @@
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="ProgressBarEnemyHealthLevel" min="-2" pref="162" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                                                      <Component id="LabelPoints" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="ProgressBarEnemyHealthLevel" min="-2" pref="162" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Group type="102" attributes="0">
+                                                              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                                                              <Component id="LabelPoints" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                                                              <Component id="LabelPointsNumber" min="-2" max="-2" attributes="0"/>
+                                                              <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                                                              <Component id="LabelExperienceNumber" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
-                                                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                                                      <Component id="LabelPointsNumber" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                                                      <Component id="LabelExperienceNumber" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="LabelEnemyDamage" min="-2" pref="62" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="LabelEnemyDamageNumber" min="-2" pref="40" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <Component id="LabelEnemyName" min="-2" pref="162" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="LabelEnemyImage" min="-2" pref="189" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                                      <Component id="LabelWhoseMotion" min="-2" pref="164" max="-2" attributes="0"/>
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="LabelLastAction" min="-2" pref="237" max="-2" attributes="0"/>
+                                                          <Component id="LabelStunnInfo" min="-2" pref="227" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace pref="46" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="LabelEnemyDamage" min="-2" pref="62" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="LabelEnemyDamageNumber" min="-2" pref="40" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="LabelEnemyName" min="-2" pref="162" max="-2" attributes="0"/>
-                                          </Group>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="LabelEnemyImage" min="-2" pref="189" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                              <Component id="LabelWhoseMotion" min="-2" pref="164" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="LabelLastAction" min="-2" pref="237" max="-2" attributes="0"/>
-                                                  <Component id="LabelStunnInfo" min="-2" pref="227" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace pref="46" max="32767" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       <Component id="ButtonItems" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Component id="ButtonAttack" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -119,18 +126,20 @@
                                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="LabelPlayerImage" min="-2" pref="245" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
                                       <Component id="LabelPlayerName" min="-2" pref="118" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="ButtonAttack" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                      <Component id="ButtonProtection" min="-2" pref="109" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="ButtonProtection" min="-2" pref="109" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="ButtonDebuff" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="LabelPlayerImage" min="-2" pref="245" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -213,10 +222,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="LabelPlayerName" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace pref="25" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="ButtonItems" pref="44" max="32767" attributes="0"/>
-                                  <Component id="ButtonAttack" alignment="0" pref="44" max="32767" attributes="0"/>
-                                  <Component id="ButtonProtection" alignment="0" pref="44" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" max="-2" attributes="0">
+                                  <Component id="ButtonAttack" alignment="3" pref="44" max="32767" attributes="0"/>
+                                  <Component id="ButtonItems" alignment="3" pref="44" max="32767" attributes="0"/>
+                                  <Component id="ButtonProtection" alignment="3" pref="44" max="32767" attributes="0"/>
+                                  <Component id="ButtonDebuff" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           </Group>
@@ -518,6 +528,14 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonItemsActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="ButtonDebuff">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonDebuffActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1214,6 +1232,197 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonOKinWindowCantUseItemActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="DialogLevelUP">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="PanelLevelUP" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="PanelLevelUP" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="PanelLevelUP">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="Label1" min="-2" pref="202" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="jButtonDamage" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="Label1" min="-2" pref="42" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButtonDamage" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="124" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="Label1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x412;&#x44b; &#x43f;&#x43e;&#x431;&#x435;&#x434;&#x438;&#x43b;&#x438; &#x432; &#x434;&#x430;&#x43d;&#x43d;&#x43e;&#x43c; &#x440;&#x430;&#x443;&#x43d;&#x434;&#x435;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x412;&#x44b;&#x431;&#x435;&#x440;&#x435;&#x442;&#x435; &#x447;&#x442;&#x43e; &#x445;&#x43e;&#x442;&#x438;&#x442;&#x435; &#x443;&#x43b;&#x443;&#x447;&#x448;&#x438;&#x442;&#x44c;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonDamage">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x423;&#x432;&#x435;&#x43b;&#x438;&#x447;&#x438;&#x442;&#x44c; &#x443;&#x440;&#x43e;&#x43d;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonDamageActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x423;&#x432;&#x435;&#x43b;&#x438;&#x447;&#x438;&#x442;&#x44c; &#x43c;&#x430;&#x43a;&#x441;&#x438;&#x43c;&#x430;&#x43b;&#x44c;&#x43d;&#x43e;&#x435; &#x437;&#x434;&#x43e;&#x440;&#x43e;&#x432;&#x44c;&#x435;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="DialogChooseLocation">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="PanelChooseLocations" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="PanelChooseLocations" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="PanelChooseLocations">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="TextFieldNumberOfLocations" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ButtonChooseLocations" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="135" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="TextFieldNumberOfLocations" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                      <Component id="ButtonChooseLocations" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="103" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x412;&#x44b;&#x431;&#x435;&#x440;&#x435;&#x442;&#x435; &#x43a;&#x43e;&#x43b;&#x432;&#x43e; &#x43b;&#x43e;&#x43a;&#x430;&#x446;&#x438;&#x439;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TextFieldNumberOfLocations">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldNumberOfLocationsActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="ButtonChooseLocations">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonChooseLocationsActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

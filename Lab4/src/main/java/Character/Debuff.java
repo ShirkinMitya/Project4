@@ -1,12 +1,12 @@
 package Character;
 
-public class Weaken {
+public class Debuff {
 
     private double damageReduction;
     private double defendReduction;
     private int numberOfMotion;
 
-    public Weaken(int numberOfMotion) {
+    public Debuff(int numberOfMotion) {
         this.numberOfMotion = numberOfMotion;
         this.damageReduction = 0.50;
         this.defendReduction = 0.25;

@@ -10,21 +10,21 @@ import GUI.Mediator;
 import java.util.ArrayList;
 
 public class Fight {
-    
-    public int roundNumber = 1;
+
     Mediator mediator;
     ChooseAction chooseAction;
-    
+    public int roundNumber = 1;
+
     public Fight(Mediator mediator) {
         this.mediator = mediator;
     }
-    
+
     public void Move(Character p1, Character p2) {
         chooseAction.MoveAction(p1, p2, mediator);
         p1.NewMotion();
         p2.NewMotion();
     }
-    
+
     public void Hit(Player player, Enemy enemy, FightActionType playerAction, CharacterAction action, ArrayList<Result> results, Items[] items) {
         player.setAction(playerAction);
         enemy.setAction(enemy.GetAction());
@@ -36,41 +36,38 @@ public class Fight {
         roundNumber++;
         if (player.getHealth() <= 0 & items[2].getCount() > 0) {
             player.setNewHealth((int) (player.getMaxHealth() * 0.05));
-            items[2].setCount(-1);
+            items[2].addCount(-1);
             mediator.Respawn();
         }
         if (player.getHealth() <= 0 | enemy.getHealth() <= 0) {
-            if (((Player) player).getWin() == 11) {
-                EndFinalRound(((Player) player), action, results);
+            if (action.IfLastRound()) {
+                EndFinalRound(player, enemy, action, results);
             } else {
                 EndRound(player, enemy, action, items);
             }
         }
         mediator.UpdateNewRound(player, enemy, roundNumber, items);
     }
-    
+
     public void EndRound(Player player, Enemy enemy, CharacterAction action, Items[] items) {
         if (player.getHealth() > 0) {
-            mediator.EndRoundInfo("You win");
-            (player).addWin();
             enemy.AddItem(items);
-            if (enemy instanceof ShaoKahn) {
-                action.AddPointsBoss(player, action.getEnemyes());
-            } else {
-                
-                action.AddPoints(player, action.getEnemyes());
+            boolean nextLevel = action.AddPoints(player, enemy);
+            if(nextLevel){
+                mediator.EndRoubdLevelUpInfo();
+            }else{
+               mediator.EndRoundInfo("You win");
             }
         } else {
             mediator.EndRoundInfo(enemy.getName() + " win");
-        }
-        roundNumber = 1;
     }
-    
-    public void EndFinalRound(Player player, CharacterAction action, ArrayList<Result> results) {
+    roundNumber  = 1;
+}
+
+public void EndFinalRound(Player player, Enemy enemy, CharacterAction action, ArrayList<Result> results) {
         String text = "Победа не на вашей стороне";
         if (player.getHealth() > 0) {
-            player.addWin();
-            action.AddPoints(player, action.getEnemyes());
+            action.AddPoints(player, enemy);
             text = "Победа на вашей стороне";
         }
         boolean ifRecord = false;
@@ -89,26 +86,22 @@ public class Fight {
         }
         mediator.EndFinalRoundInfo(text, ifRecord);
     }
-    
-    public int[] ResetAttack() {
-        int a[] = {0};
-        return a;
-    }
-    
+
     public Enemy NewRound(Player player, CharacterAction action) {
         Enemy enemy = null;
-        if (player.getWin() == 6 | player.getWin() == 11) {
-            enemy = action.ChooseBoss();
-        } else {
-            enemy = action.ChooseEnemy();
-        }
+        enemy = action.ChooseEnemy(player);
         mediator.UpdateEnemy(enemy);
         mediator.UpdatePlayer(player);
         return enemy;
     }
-    
+
+    public int[] ResetAttack() {
+        int a[] = {0};
+        return a;
+    }
+
     public int getRoundNumber() {
         return roundNumber;
     }
-    
+
 }

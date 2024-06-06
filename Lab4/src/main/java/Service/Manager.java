@@ -26,7 +26,6 @@ public class Manager {
     public Manager(Mediator mediator) {
         this.mediator = mediator;
         this.fight = new Fight(mediator);
-        this.characterAction = new CharacterAction(mediator);
         try {
             resultsManager.ReadFromExcel();
         } catch (IOException ex) {
@@ -38,9 +37,10 @@ public class Manager {
         items[2] = new Items("Крест возрождения", 0);
     }
 
-    public void NewGame() {
+    public void NewGame(int numberOfLocations) {
+        characterAction = new CharacterAction(mediator,numberOfLocations);
         player = new Player(0, 80, 16);
-        enemy = characterAction.ChooseEnemy();
+        enemy = characterAction.ChooseEnemy(player);
         mediator.UpdateNewRound(player, enemy, fight.getRoundNumber(), items);
     }
 
@@ -51,6 +51,16 @@ public class Manager {
     public void NewRound() {
         fight.NewRound(player, characterAction);
         mediator.UpdateNewRound(player, enemy, 0, items);
+    }
+    
+    public void HealthIfLevelUp(){
+      player.addMaxHealth(20);
+      NewRound();
+    }
+    
+    public void DamageIfLevelUp(){
+       player.addDamage(5);
+       NewRound();
     }
 
     public void EndGameWithRecord(String text) {

@@ -3,7 +3,7 @@ package EnemyFabric;
 import Enemy.LiuKang;
 import Character.Enemy;
 
-public class FabricLiuKang implements EnemyFabricInterface {
+public class FabricLiuKang implements EnemyFabric {
 
     @Override
     public Enemy create() {

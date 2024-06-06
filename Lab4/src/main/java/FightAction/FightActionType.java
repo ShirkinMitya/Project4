@@ -6,6 +6,6 @@ public enum FightActionType {
     DEFEND,
     SKIPMOVE,
     HILL,
-    WEAKEN
+    DEBUFF
 
 }

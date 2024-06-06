@@ -4,8 +4,8 @@ import Character.Enemy;
 
 public class SubZero extends Enemy {
 
-    public SubZero(int level, int health, int damage, int attack) {
-        super("SubZero", level, health, damage, attack, "", new int[]{25, 25, 0, 50});
+    public SubZero(int level, int health, int damage) {
+        super("SubZero", level, health, damage, "Pictures/Sub-Zero.jpg", new int[]{20, 20, 0, 40, 20, 0});
     }
 
 }

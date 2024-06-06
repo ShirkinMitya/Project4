@@ -2,7 +2,7 @@ package EnemyFabric;
 
 import Character.Enemy;
 
-public interface EnemyFabricInterface {
+public interface EnemyFabric {
 
     public Enemy create();
 

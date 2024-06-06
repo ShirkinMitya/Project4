@@ -3,88 +3,45 @@ package GUI;
 import Game.Items;
 import Character.Player;
 import Character.Enemy;
-import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JRadioButton;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class Mediator {
 
-    private JButton ButtonAttack;
-    private JButton ButtonCloseRecordTable;
-    private JButton ButtonFinishNoRecord;
-    private JButton ButtonFinishWithRecord;
-    private JButton ButtonItems;
-    private JButton ButtonNextInRoundResult;
-    private JButton ButtonOKinWindowCantUseItem;
-    private JButton ButtonProtection;
-    private JButton ButtonShowResultTable;
-    private JButton ButtonStartNewGame;
-    private JButton ButtonUseSelectedItem;
     private JDialog DialogCantUseItem;
     private JDialog DialogItemsBag;
-    private JDialog DialogRecordTable;
     private JDialog DialogRoundResult;
     private JDialog DialogWinNoRecord;
     private JDialog DialogWinWithRecord;
+    private JDialog DialogLevelUP;
     private JFrame FrameFight;
-    private JLabel LabelBagItems;
-    private JLabel LabelCantUseItem;
-    private JLabel LabelCantUseItemSecondRow;
-    private JLabel LabelEnemyDamage;
     private JLabel LabelEnemyDamageNumber;
     private JLabel LabelEnemyHealth;
-    private JLabel LabelEnemyImage;
     private JLabel LabelEnemyLevel;
     private JLabel LabelEnemyName;
-    private JLabel LabelExperience;
     private JLabel LabelExperienceNumber;
-    private JLabel LabelFight;
-    private JLabel LabelForMainPicture;
     private JLabel LabelGameName;
     private JLabel LabelLastAction;
-    private JLabel LabelPlayerDamage;
     private JLabel LabelPlayerDamageNumber;
     private JLabel LabelPlayerHealth;
-    private JLabel LabelPlayerImage;
     private JLabel LabelPlayerLevel;
-    private JLabel LabelPlayerName;
-    private JLabel LabelPoints;
     private JLabel LabelPointsNumber;
-    private JLabel LabelRecordTable;
     private JLabel LabelStunnInfo;
     private JLabel LabelWhoseMotion;
     private JLabel LabelWinNoRecord;
-    private JLabel LabelWinNotRecordSecondRow;
     private JLabel LabelWinWithRecord;
-    private JLabel LabelWriteNameYourCharacter;
-    private JLabel LabelWriteNameYourCharacterSecondRow;
-    private JPanel PaneFight;
-    private JPanel PaneWinWithRecord;
-    private JPanel PanelCantUseItem;
-    private JPanel PanelFirstMenu;
-    private JPanel PanelItemsBag;
-    private JPanel PanelRecordTable;
-    private JPanel PanelRoundResult;
-    private JPanel PanelWinNoRecord;
     private JProgressBar ProgressBarEnemyHealthLevel;
     private JProgressBar ProgressBarPlayerHealthLevel;
     private JRadioButton RadioButtonBigPotion;
     private JRadioButton RadioButtonCrossOfRebirth;
     private JRadioButton RadioButtonSmallPotion;
-    private JScrollPane ScrollPaneRecordTable;
     private JTable TableRecord;
-    private JTextField TextFieldNameForRecord;
-    private ButtonGroup buttonGroup1;
     private JLabel LabelRoundResult;
 
     public void UpdatePlayer(Player player) {
@@ -130,9 +87,9 @@ public class Mediator {
         RadioButtonCrossOfRebirth.setText(items[2].getName() + ", " + items[2].getCount() + " шт");
     }
 
-    public void MoveInfo(String lastAction, String stunnInfo) {
+    public void MoveInfo(String lastAction, String stunInfo) {
         LabelLastAction.setText(lastAction);
-        LabelStunnInfo.setText(stunnInfo);
+        LabelStunnInfo.setText(stunInfo);
     }
 
     public void Respawn() {
@@ -142,7 +99,12 @@ public class Mediator {
     public void EndRoundInfo(String resultText) {
         DialogRoundResult.setVisible(true);
         DialogRoundResult.setBounds(300, 150, 700, 600);
-        LabelRoundResult.setText("You win");
+        LabelRoundResult.setText(resultText);
+    }
+    
+    public void EndRoubdLevelUpInfo(){
+        DialogLevelUP.setVisible(true);
+        DialogLevelUP.setBounds(300, 150, 700, 600);
     }
 
     public void EndFinalRoundInfo(String text, boolean ifRecord) {
@@ -165,5 +127,124 @@ public class Mediator {
     public void CannotUseUtem() {
         DialogCantUseItem.setVisible(true);
         DialogCantUseItem.setBounds(300, 200, 400, 300);
+    }
+    
+    
+    
+    
+     public void setDialogCantUseItem(JDialog DialogCantUseItem) {
+        this.DialogCantUseItem = DialogCantUseItem;
+    }
+
+    public void setDialogItemsBag(JDialog DialogItemsBag) {
+        this.DialogItemsBag = DialogItemsBag;
+    }
+
+    public void setDialogRoundResult(JDialog DialogRoundResult) {
+        this.DialogRoundResult = DialogRoundResult;
+    }
+
+    public void setDialogWinNoRecord(JDialog DialogWinNoRecord) {
+        this.DialogWinNoRecord = DialogWinNoRecord;
+    }
+
+    public void setDialogWinWithRecord(JDialog DialogWinWithRecord) {
+        this.DialogWinWithRecord = DialogWinWithRecord;
+    }
+    
+    public void setDialogLevelUP(JDialog DialogLevelUP) {
+        this.DialogLevelUP = DialogLevelUP;
+    }
+
+    public void setFrameFight(JFrame FrameFight) {
+        this.FrameFight = FrameFight;
+    }
+
+    public void setLabelEnemyDamageNumber(JLabel LabelEnemyDamageNumber) {
+        this.LabelEnemyDamageNumber = LabelEnemyDamageNumber;
+    }
+
+    public void setLabelEnemyHealth(JLabel LabelEnemyHealth) {
+        this.LabelEnemyHealth = LabelEnemyHealth;
+    }
+
+    public void setLabelEnemyLevel(JLabel LabelEnemyLevel) {
+        this.LabelEnemyLevel = LabelEnemyLevel;
+    }
+
+    public void setLabelEnemyName(JLabel LabelEnemyName) {
+        this.LabelEnemyName = LabelEnemyName;
+    }
+
+    public void setLabelExperienceNumber(JLabel LabelExperienceNumber) {
+        this.LabelExperienceNumber = LabelExperienceNumber;
+    }
+
+    public void setLabelGameName(JLabel LabelGameName) {
+        this.LabelGameName = LabelGameName;
+    }
+
+    public void setLabelLastAction(JLabel LabelLastAction) {
+        this.LabelLastAction = LabelLastAction;
+    }
+
+    public void setLabelPlayerDamageNumber(JLabel LabelPlayerDamageNumber) {
+        this.LabelPlayerDamageNumber = LabelPlayerDamageNumber;
+    }
+
+    public void setLabelPlayerHealth(JLabel LabelPlayerHealth) {
+        this.LabelPlayerHealth = LabelPlayerHealth;
+    }
+
+    public void setLabelPlayerLevel(JLabel LabelPlayerLevel) {
+        this.LabelPlayerLevel = LabelPlayerLevel;
+    }
+
+    public void setLabelPointsNumber(JLabel LabelPointsNumber) {
+        this.LabelPointsNumber = LabelPointsNumber;
+    }
+
+    public void setLabelStunnInfo(JLabel LabelStunnInfo) {
+        this.LabelStunnInfo = LabelStunnInfo;
+    }
+
+    public void setLabelWhoseMotion(JLabel LabelWhoseMotion) {
+        this.LabelWhoseMotion = LabelWhoseMotion;
+    }
+
+    public void setLabelWinNoRecord(JLabel LabelWinNoRecord) {
+        this.LabelWinNoRecord = LabelWinNoRecord;
+    }
+
+    public void setLabelWinWithRecord(JLabel LabelWinWithRecord) {
+        this.LabelWinWithRecord = LabelWinWithRecord;
+    }
+
+    public void setProgressBarEnemyHealthLevel(JProgressBar ProgressBarEnemyHealthLevel) {
+        this.ProgressBarEnemyHealthLevel = ProgressBarEnemyHealthLevel;
+    }
+
+    public void setProgressBarPlayerHealthLevel(JProgressBar ProgressBarPlayerHealthLevel) {
+        this.ProgressBarPlayerHealthLevel = ProgressBarPlayerHealthLevel;
+    }
+
+    public void setRadioButtonBigPotion(JRadioButton RadioButtonBigPotion) {
+        this.RadioButtonBigPotion = RadioButtonBigPotion;
+    }
+
+    public void setRadioButtonCrossOfRebirth(JRadioButton RadioButtonCrossOfRebirth) {
+        this.RadioButtonCrossOfRebirth = RadioButtonCrossOfRebirth;
+    }
+
+    public void setRadioButtonSmallPotion(JRadioButton RadioButtonSmallPotion) {
+        this.RadioButtonSmallPotion = RadioButtonSmallPotion;
+    }
+
+    public void setTableRecord(JTable TableRecord) {
+        this.TableRecord = TableRecord;
+    }
+
+    public void setLabelRoundResult(JLabel LabelRoundResult) {
+        this.LabelRoundResult = LabelRoundResult;
     }
 }
