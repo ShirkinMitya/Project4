@@ -5,7 +5,7 @@ public enum FightActionType {
     ATTACK,
     DEFEND,
     SKIPMOVE,
-    HILL,
+    HEAL,
     DEBUFF
 
 }

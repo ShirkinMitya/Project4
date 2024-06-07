@@ -26,7 +26,7 @@ public class Mediator {
     private JLabel LabelEnemyLevel;
     private JLabel LabelEnemyName;
     private JLabel LabelExperienceNumber;
-    private JLabel LabelGameName;
+    private JLabel LabelMKImage;
     private JLabel LabelLastAction;
     private JLabel LabelPlayerDamageNumber;
     private JLabel LabelPlayerHealth;
@@ -36,22 +36,26 @@ public class Mediator {
     private JLabel LabelWhoseMotion;
     private JLabel LabelWinNoRecord;
     private JLabel LabelWinWithRecord;
+    private JLabel LabelRoundResult;
+    private JLabel LabelEnemyImage;
+    private JLabel LabelPlayerImage;
     private JProgressBar ProgressBarEnemyHealthLevel;
     private JProgressBar ProgressBarPlayerHealthLevel;
     private JRadioButton RadioButtonBigPotion;
     private JRadioButton RadioButtonCrossOfRebirth;
     private JRadioButton RadioButtonSmallPotion;
     private JTable TableRecord;
-    private JLabel LabelRoundResult;
 
     public void UpdatePlayer(Player player) {
         ProgressBarPlayerHealthLevel.setMaximum(player.getMaxHealth());
-        ProgressBarEnemyHealthLevel.setValue(player.getHealth());
+        ProgressBarPlayerHealthLevel.setValue(player.getHealth());
         LabelPointsNumber.setText(Integer.toString(player.getPoints()));
         LabelExperienceNumber.setText((player.getExperience() + "/" + player.getNextExperience()));
         LabelPlayerLevel.setText(player.getLevel() + " level");
         LabelPlayerHealth.setText(player.getMaxHealth() + "/" + player.getMaxHealth());
         LabelPlayerDamageNumber.setText(Integer.toString(player.getDamage()));
+        ImageIcon icon = new ImageIcon(getClass().getResource(player.getImagePath()));
+        LabelPlayerImage.setIcon(icon);
     }
 
     public void UpdateEnemy(Enemy enemy) {
@@ -60,25 +64,26 @@ public class Mediator {
         LabelEnemyName.setText(enemy.getName());
         LabelEnemyDamageNumber.setText(Integer.toString(enemy.getDamage()));
         LabelEnemyHealth.setText(enemy.getHealth() + "/" + enemy.getMaxHealth());
-        ImageIcon icon = new ImageIcon(enemy.getImagePath());
-        LabelGameName.setIcon(icon);
+        ImageIcon icon = new ImageIcon(getClass().getResource(enemy.getImagePath()));
+        LabelEnemyImage.setIcon(icon);
         LabelEnemyLevel.setText(enemy.getLevel() + " level");
     }
 
     public void UpdateRecordTable(DefaultTableModel model) {
-        TableRecord.setModel(model);
+        if (model != null) {
+            TableRecord.setModel(model);
+        }
     }
 
-    public void UpdateNewRound(Player player, Enemy enemy, int round, Items[] itoms) {
+    public void UpdateNewRound(Player player, Enemy enemy, int round, Items[] items) {
         UpdatePlayer(player);
         UpdateEnemy(enemy);
-        BagText(itoms);
+        BagText(items);
         if (round % 2 == 1) {
             LabelWhoseMotion.setText("Your turn");
         } else {
             LabelWhoseMotion.setText(enemy.getName() + "'s turn");
         }
-        //jLabel9.setText("");
     }
 
     public void BagText(Items[] items) {
@@ -101,8 +106,8 @@ public class Mediator {
         DialogRoundResult.setBounds(300, 150, 700, 600);
         LabelRoundResult.setText(resultText);
     }
-    
-    public void EndRoubdLevelUpInfo(){
+
+    public void EndRoubdLevelUpInfo() {
         DialogLevelUP.setVisible(true);
         DialogLevelUP.setBounds(300, 150, 700, 600);
     }
@@ -128,11 +133,8 @@ public class Mediator {
         DialogCantUseItem.setVisible(true);
         DialogCantUseItem.setBounds(300, 200, 400, 300);
     }
-    
-    
-    
-    
-     public void setDialogCantUseItem(JDialog DialogCantUseItem) {
+
+    public void setDialogCantUseItem(JDialog DialogCantUseItem) {
         this.DialogCantUseItem = DialogCantUseItem;
     }
 
@@ -151,7 +153,7 @@ public class Mediator {
     public void setDialogWinWithRecord(JDialog DialogWinWithRecord) {
         this.DialogWinWithRecord = DialogWinWithRecord;
     }
-    
+
     public void setDialogLevelUP(JDialog DialogLevelUP) {
         this.DialogLevelUP = DialogLevelUP;
     }
@@ -178,10 +180,6 @@ public class Mediator {
 
     public void setLabelExperienceNumber(JLabel LabelExperienceNumber) {
         this.LabelExperienceNumber = LabelExperienceNumber;
-    }
-
-    public void setLabelGameName(JLabel LabelGameName) {
-        this.LabelGameName = LabelGameName;
     }
 
     public void setLabelLastAction(JLabel LabelLastAction) {
@@ -247,4 +245,19 @@ public class Mediator {
     public void setLabelRoundResult(JLabel LabelRoundResult) {
         this.LabelRoundResult = LabelRoundResult;
     }
+
+    public void setLabelEnemyImage(JLabel LabelEnemyImage) {
+        this.LabelEnemyImage = LabelEnemyImage;
+    }
+
+    public void setLabelPlayerImage(JLabel LabelPlayerImage) {
+        this.LabelPlayerImage = LabelPlayerImage;
+    }
+
+    public void setLabelMKImage(JLabel LabelMKImage) {
+        this.LabelMKImage = LabelMKImage;
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Pictures/MK.jpg"));
+        LabelMKImage.setIcon(icon);
+    }
+
 }

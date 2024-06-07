@@ -9,7 +9,7 @@ import java.util.Random;
 public class Enemy extends Character {
 
     private int[] behaviorsProbabilities;
-    private double experienceMultiolier = 1;
+    private double experienceMultiplier = 1;
     private int[] itemsProbabilities = new int[]{25, 15, 5};
     private Queue<FightActionType> enemyActions = new LinkedList<>();
     private final FightActionType kindFight[][] = 
@@ -18,7 +18,7 @@ public class Enemy extends Character {
             {FightActionType.DEFEND, FightActionType.ATTACK, FightActionType.DEFEND},
             {FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.ATTACK, FightActionType.ATTACK},
             {FightActionType.DEBUFF},
-            {FightActionType.HILL}};
+            {FightActionType.HEAL}};
 
     public Enemy(String name, int level, int health, int damage, String imagePath, int[] behaviorsProbabilities) {
         super(name, level, health, damage, imagePath);
@@ -60,11 +60,11 @@ public class Enemy extends Character {
     }
 
     public void setExperienceMultiolier(double experienceMultiolier) {
-        this.experienceMultiolier = experienceMultiolier;
+        this.experienceMultiplier = experienceMultiolier;
     }
 
     public double getExperienceMultiolier() {
-        return experienceMultiolier;
+        return experienceMultiplier;
     }
 
 }

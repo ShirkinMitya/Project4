@@ -8,7 +8,7 @@ public class Debuff {
 
     public Debuff(int numberOfMotion) {
         this.numberOfMotion = numberOfMotion;
-        this.damageReduction = 0.50;
+        this.damageReduction = 0.50;  
         this.defendReduction = 0.25;
     }
 

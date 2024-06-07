@@ -3,7 +3,6 @@ package Game;
 import Character.Player;
 import Character.Character;
 import Character.Enemy;
-import Enemy.ShaoKahn;
 import FightAction.ChooseAction;
 import FightAction.FightActionType;
 import GUI.Mediator;
@@ -12,7 +11,7 @@ import java.util.ArrayList;
 public class Fight {
 
     Mediator mediator;
-    ChooseAction chooseAction;
+    ChooseAction chooseAction = new ChooseAction();
     public int roundNumber = 1;
 
     public Fight(Mediator mediator) {
@@ -21,8 +20,8 @@ public class Fight {
 
     public void Move(Character p1, Character p2) {
         chooseAction.MoveAction(p1, p2, mediator);
-        p1.NewMotion();
-        p2.NewMotion();
+        p1.DebuffTursMinus();
+        p2.DebuffTursMinus();
     }
 
     public void Hit(Player player, Enemy enemy, FightActionType playerAction, CharacterAction action, ArrayList<Result> results, Items[] items) {
@@ -39,7 +38,7 @@ public class Fight {
             items[2].addCount(-1);
             mediator.Respawn();
         }
-        if (player.getHealth() <= 0 | enemy.getHealth() <= 0) {
+        if (player.getHealth() <= 0 || enemy.getHealth() <= 0) {
             if (action.IfLastRound()) {
                 EndFinalRound(player, enemy, action, results);
             } else {
@@ -53,18 +52,18 @@ public class Fight {
         if (player.getHealth() > 0) {
             enemy.AddItem(items);
             boolean nextLevel = action.AddPoints(player, enemy);
-            if(nextLevel){
+            if (nextLevel) {
                 mediator.EndRoubdLevelUpInfo();
-            }else{
-               mediator.EndRoundInfo("You win");
+            } else {
+                mediator.EndRoundInfo("You win");
             }
         } else {
             mediator.EndRoundInfo(enemy.getName() + " win");
+        }
+        roundNumber = 1;
     }
-    roundNumber  = 1;
-}
 
-public void EndFinalRound(Player player, Enemy enemy, CharacterAction action, ArrayList<Result> results) {
+    public void EndFinalRound(Player player, Enemy enemy, CharacterAction action, ArrayList<Result> results) {
         String text = "Победа не на вашей стороне";
         if (player.getHealth() > 0) {
             action.AddPoints(player, enemy);
@@ -90,14 +89,11 @@ public void EndFinalRound(Player player, Enemy enemy, CharacterAction action, Ar
     public Enemy NewRound(Player player, CharacterAction action) {
         Enemy enemy = null;
         enemy = action.ChooseEnemy(player);
+        enemy.setNewHealth(enemy.getMaxHealth());
+        player.setNewHealth(player.getMaxHealth());
         mediator.UpdateEnemy(enemy);
         mediator.UpdatePlayer(player);
         return enemy;
-    }
-
-    public int[] ResetAttack() {
-        int a[] = {0};
-        return a;
     }
 
     public int getRoundNumber() {

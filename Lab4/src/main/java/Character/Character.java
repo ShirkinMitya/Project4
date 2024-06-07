@@ -13,7 +13,7 @@ public class Character {
     private double probabilityToBrakeBlock;
     private String imagePath;
     private FightActionType action;
-    private Debuff weaken = null;
+    private Debuff debuff = null;
 
     public Character(String name, int level, int health, int damage, String imagePath) {
         this.name = name;
@@ -28,8 +28,8 @@ public class Character {
     }
 
     public void removeHealth(int health) {
-        if (weaken != null) {
-            this.health -= health * (1 + weaken.getDefendReduction());
+        if (debuff != null) {
+            this.health -= health * (1 + debuff.getDefendReduction());
         } else {
             this.health -= health;
         }
@@ -39,17 +39,19 @@ public class Character {
     }
 
     public int getDamage() {
-        if (weaken != null) {
-            return (int) (this.damage * (1.0 - weaken.getDamageReduction()));
+        if (debuff != null) {
+            return (int) (this.damage * (1.0 - debuff.getDamageReduction()));
         } else {
             return this.damage;
         }
     }
 
-    public void NewMotion() {
-        weaken.MinusNumberOfMotion();
-        if (weaken.getNumberOfMotion() == 0) {
-            weaken = null;
+    public void DebuffTursMinus() {
+        if (debuff != null) {
+            debuff.MinusNumberOfMotion();
+            if (debuff.getNumberOfMotion() == 0) {
+                debuff = null;
+            }
         }
     }
 
@@ -63,6 +65,10 @@ public class Character {
 
     public void addMaxHealth(int maxhealth) {
         this.maxhealth += maxhealth;
+    }
+
+    public void addHealth(int health) {
+        this.health += health;
     }
 
     public String getName() {
@@ -117,8 +123,8 @@ public class Character {
         this.action = action;
     }
 
-    public void setWeaken(Debuff weaken) {
-        this.weaken = weaken;
+    public void setDebuff(Debuff weaken) {
+        this.debuff = weaken;
     }
 
 }

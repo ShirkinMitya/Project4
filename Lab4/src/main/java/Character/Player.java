@@ -7,7 +7,7 @@ public class Player extends Character {
     private int nextExperience;
 
     public Player(int level, int health, int damage) {
-        super("You", level, health, damage, "");
+        super("You", level, health, damage, "/Pictures/Kitana.jpg");
         this.points = 0;
         this.experience = 0;
         this.nextExperience = 40;

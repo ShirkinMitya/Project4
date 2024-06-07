@@ -7,7 +7,6 @@ public class FabricSonyaBlade implements EnemyFabric {
 
     @Override
     public Enemy create() {
-
         return new SonyaBlade(1, 80, 16);
     }
 }
